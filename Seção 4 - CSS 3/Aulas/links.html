@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+ 		/*
+
+ 		Mantenha a ordem de formatação. Link, visited, hover, active;
+ 		Se você não quiser que haja diferença nos links visitados, basta
+ 		colocar a mesma color dos não visitados;
+
+		*/
+		a{
+			padding: 5px 10px;
+			text-decoration: none;
+		} 
+		/* 
+		Não visitados:
+
+		a:link{
+			color: #B9C941;
+		}
+		 
+		Já visitados 
+
+		a:visited{
+			color: #B9C941;}
+
+
+		OU
+		*/
+
+		a:link, a:visited {
+			color: red;
+		}
+
+
+		/* Cursor sobre o link */
+		a:hover{
+			color: white;
+			background: #6D790F;
+		}
+		/* Links Ativos, Quando Clicados*/
+		a:active{
+			color: grey;
+		}
+	
+
+	</style>
+</head>
+<body>
+	<a href="https://www.google.com.br">Google</a> |
+	<a href="https://www.tecmundo.com.br">TecMundo</a> |
+	<a href="https://www.megacurioso.com.br">MegaCurioso</a>
+
+</body>
+</html>

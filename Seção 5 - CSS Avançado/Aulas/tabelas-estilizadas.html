@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: "Trebuchet MS", sans-serif;
+		}
+
+		table {
+			width: 600px;
+			
+
+
+		}
+
+		th, td {
+			padding: 7px;
+			
+		}
+
+		th {
+			text-transform: uppercase;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #111;
+			font-size: 90%;
+			letter-spacing: 0.1em;
+		}
+
+		tr.alternado {
+			background-color: #EFEFEF;
+		}
+
+		.numero {
+			text-align: right;
+		}
+
+		tr:hover {
+			background-color: #C3E6E5;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+
+	<h2>Estilizando Tabelas</h2>
+	<table>
+	
+	<tr class="alternado">
+		<th>Código</th>
+		<th>Produto</th>
+		<th>Preço</th>
+	</tr>
+
+	<tr>
+		<td>001</td>
+		<td>Notebook</td>
+		<td class="numero">R$ 2500</td>
+	</tr>
+
+	<tr class="alternado">
+		<td>002</td>
+		<td>Tablet</td>
+		<td class="numero">R$ 1500</td>
+	</tr>
+
+	<tr>
+		<td>003</td>
+		<td>IPhone</td>
+		<td class="numero">R$ 3500</td>
+	</tr>
+
+	<tr class="alternado">
+		<td>004</td>
+		<td>Nexus</td>
+		<td class="numero">R$ 3500</td>
+	</tr>
+</table>
+	
+
+
+</body>
+</html>

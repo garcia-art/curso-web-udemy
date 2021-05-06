@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		body{
+			font-family: "Trebuchet MS", Helvetica, sans-serif
+
+		}
+
+		/*Aba no sentido de não ser tudo junto, como nas demais*/
+
+		ul{
+			padding: 0;
+			margin: 0;
+			width: 720px;
+			list-style: none;
+		}
+
+		ul li {
+			float: left;
+			background: url(Imagens/aba-direita.png) no-repeat top right;
+
+		}
+
+		li a {
+			display: block;
+			padding: 0 2em;
+			line-height: 3em;
+			text-decoration: none;
+			background: url(Imagens/aba-esquerda.png) no-repeat top left;
+			color: #FFF;
+
+		}
+
+		ul a:hover {
+			color: #894A1F;
+		}
+
+		ul #atual {
+			background: url(Imagens/aba-direita-atual.png) no-repeat top right;
+		}
+
+		ul #atual a{
+			background: url(Imagens/aba-esquerda-atual.png) no-repeat top left;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li id="atual"><a href="home.html">Home</a></li>
+		<li><a href="sobre.html">Sobre</a></li>
+		<li><a href="servicos.html">Serviços</a></li>
+		<li><a href="noticias.html">Notícias</a></li>
+		<li><a href="contato.html">Contato</a></li>
+	</ul>
+
+</body>
+</html>

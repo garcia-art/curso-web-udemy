@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atividade 170</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+
+		var nome = prompt('Digite seu nome:')
+		var altura = prompt('Informe sua altura (em centímetros):')
+		var peso = prompt('Informe seu peso (em kg):')
+		var clas = ''
+
+		peso = parseFloat(peso)
+		altura = parseFloat(altura)
+
+		altura = altura/100
+
+		var imc = peso/(altura*altura)
+
+		if (imc < 16){
+			clas = 'Baixo peso muito grave'
+		} else if (imc >= 16 && imc <= 16.99){
+			clas = 'Baixo peso grave'
+		} else  if (imc >= 17 && imc <= 18.49){
+			clas = 'Baixo peso'
+		} else if (imc >= 18.5 && imc <= 24.99){
+			clas = 'Peso normal'
+		}else  if (imc >= 25 && imc <= 29.99){
+			clas = 'Sobrepeso'
+		} else if (imc >= 30 && imc <= 34.99){
+			clas = 'Obesidade grau I'
+		}else  if (imc >= 35 && imc <= 39.99){
+			clas = 'Obesidade grau II'
+		} else if (imc > 40) {
+			clas = 'Obesidade grau III'
+		}
+
+		alert(nome + ' possui IMC igual a ' + imc + ' e sua classificação é ' + clas + '!')
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

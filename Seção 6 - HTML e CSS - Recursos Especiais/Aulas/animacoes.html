@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style type="text/css">
+	
+	/* ANIMAÇÕES
+
+	@keyframes nomedaanimação {
+	from { formatacao inicial }
+	to { formatacao final }}
+
+	LEMBRE-SE: 
+	- USAR PREFIXOS O, MOZ E WEBKIT. Ex: @-moz-keyframes xxxxx;
+	- Se movimentar algo na tela, use position:relative;
+
+	*/
+
+
+	@keyframes animacao-caixa {
+		from{background: red;border-radius: 0px;top: 0;left: 0;} to{background: green;border-radius: 450px;top: 200px; left:200px;}}
+
+	#caixa {
+		width: 300px;
+		height: 300px;
+		background: red;
+		animation-name: animacao-caixa;
+		animation-duration: 5s; /* duração da animação */
+		animation-delay: 3s; /* delay para iniciar a animação */
+		animation-iteration-count: 2; /* número de vezes da animação*/
+		/*animation-direction: alternate;  -> animação que vai e volta*/
+		/*animation-direction:  reverse; -> inverte a ordem da animação */
+		animation-direction: alternate;
+		position:relative;
+		/*OU, ESCREVENDO TUDO EM UM SÓ ATRIBUTO */
+
+		/*animation: animacao-caixa 5s 3s 2 alternate;*/ 
+	
+	}	
+		
+
+
+	</style>
+</head>
+<body>
+
+	<div id="caixa">
+		
+
+
+	</div>
+
+
+
+</body>
+</html>

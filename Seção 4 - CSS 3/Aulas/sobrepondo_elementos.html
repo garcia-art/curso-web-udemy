@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+ 		/*
+
+			Z-Index: Quando maior o número, mais a frente aparece. Como o z-index do
+			conteúdo1 é maior que a do conteúdo 2, ele aparece na frente;
+
+			Se o z-index for igual, ele segue a ordem do documento. O primeiro aparece
+			atrás, o segundo aparece a frente;
+		*/
+
+		.conteudo1 {
+			border: 1px solid red;
+			background: orange;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			z-index: 1;
+		}
+
+		.conteudo2 {
+			border: 1px solid red;
+			background: green;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 80px;
+			left: 80px;
+			z-index: 0;
+		}
+
+		.conteudo3{
+			border: 1px solid red;
+			background: yellow;
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 160px;
+			left: 160px;
+			z-index: 0;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="conteudo1"> Conteúdo 1</div>
+	<div class="conteudo2"> Conteúdo 2</div>	
+	<div class="conteudo3"> Conteúdo 3</div>	
+
+	
+
+</body>
+</html>

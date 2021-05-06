@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+	// O timing é relacionado ao tempo
+	// Tem documentação na w3schools.com
+	// setTimeout() -> executa uma vez uma ação após um período informado
+	// clearTimeout() -> interrompe o Timeout
+	// setInterval() -> executa continuamente uma ação após um período informado
+	// clearInterval() -> interrompe o Interval
+	// unidade de tempo = milissegundos
+
+	var i = 1000
+	//setTimeout(function () {document.write('TimeOut'+ '<br>')}, 2000)
+	//setInterval(function () {document.write('Interval' + '<br>')}, 3000)
+	//setInterval(function () {document.write(i); i = i - 100;if (i == 500) {window.location.reload()}},1000)
+	var x = setInterval(function () {document.write(i); i = i - 100;if (i == 0) {clearInterval(x)}},1000)
+</script>
+</head>
+<body>
+	
+</body>
+</html> 

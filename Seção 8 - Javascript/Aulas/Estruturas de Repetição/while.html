@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+		
+	var x = 1
+
+	while (x <= 10) {
+
+		document.write(x + '<br>')
+
+		x += 1 // ou x++
+
+	}
+
+	// uso do break no while
+
+	var y = 0
+
+	while (y <= 20) {
+
+		document.write(y + '<br>')
+
+		if (y == 5){
+			break // encerra o while
+		}
+
+		y += 1 // ou x++
+
+	}
+
+// uso do continue no while
+
+	var z = 1
+
+	while (z <= 30) {
+
+		document.write(z + '<br>')
+
+		z++
+
+		if (z == 8){
+
+			document.write('Entrou no if')
+			continue // encerra esse while, mas roda o while denovo (desconsidera o resto do bloco de código)
+
+		}
+	}
+
+
+
+
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

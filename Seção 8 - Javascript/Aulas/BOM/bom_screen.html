@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+	// O screen é a tela onde o browser renderiza.
+	// Tem documentação na w3schools.com
+
+	var height_altura = window.screen.availHeight
+	var width_largura = window.screen.availWidth
+
+	document.write('A altura do navegador é ' + height_altura + '<br>')
+	document.write('A largura do navegador é ' + width_largura + '<br>')
+	
+	// recuperam o máximo de altura e largura. Não o espaço que o browser ocupa.
+
+	if (width_largura < 500) {
+
+		document.write('Lógica para impressão do menu mobile')
+	} else {
+		document.write('Lógica para impressão do menu desktop')
+	}
+</script>
+
+</head>
+<body>
+</body>
+</html>

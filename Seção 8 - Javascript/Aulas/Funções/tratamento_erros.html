@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+
+		// O throw 'gera' um erro que você determina quando ocorrerá
+		throw new Error('Houve um erro, mas não se preocupe. Estamos trabalhando!')
+
+		//Netflix
+
+		var video = Array()
+
+		video[1] = Array()
+		video[1]['nome'] = 'Fullmetal Alchemist'
+		video[1]['categoria'] = 'Anime'
+
+		function getVideo(video){
+
+			try {
+			// toda a codificação passível de erro deve ficar dentro do try
+			// podem ser usados quantos try's necessários
+			console.log(video[0]['nome'])}
+			
+			catch(erro) {
+			// recebe o erro 
+			// o parâmetro pode ser qualquer um, desde que respeite as regras de declaração de variável
+			tratarErro(erro)
+			console.log('Agora sim podemos tratar esse erro')}
+
+			finally { 
+			// pode ser aplicado para o try e pro catch {
+			console.log('Sempre passa por aqui (try/catch)')}
+			
+
+			console.log('A aplicação não morreu! ')}
+
+		getVideo(video)
+
+		function tratarErro(e){
+			// lógica para regristrar erro no servidor
+			console.log(e)
+		}
+
+	</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

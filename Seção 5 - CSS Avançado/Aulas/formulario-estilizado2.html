@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: "Trebuchet MS", sans-serif;
+			background: #643D87 url(Imagens/fundo.jpg) no-repeat top center;
+		}
+
+		#container {
+			width: 400px;
+			height: 300px;
+			background-color: rgba(255,255,255,0.3);
+			border-radius: 10px;
+			margin: 0 auto;
+			margin-top: 120px;
+			text-align: center;
+		}
+
+		#container img{
+			width: 120px;
+			height:120px;
+			margin-top: -60px;
+			margin-bottom: 30px;
+		}
+
+		input {
+			height: 40px;
+			width: 80%;
+			margin-bottom: 10px;
+			font-size: 18px;
+			border: none;
+			padding-left: 40px;
+			background-repeat: no-repeat;
+			background-position: 10px;
+		}
+
+		input.email {
+			background-image: url(Imagens/icone-usuario.png);
+		}
+
+		input.senha {
+			background-image: url(Imagens/icone-cadeado.png);
+		}
+
+		input.submit {
+			color: #fff;
+			background-color: #f79300;
+			border: 2px solid #db7d00;
+			padding: 5px 20px;
+			height: 45px;
+			width: 90%;
+			background: -webkit-linear-gradient(to bottom, #FAA600, #F68A00);
+			background: -moz-linear-gradient(to bottom, #FAA600, #F68A00);
+			background: -o-linear-gradient(to bottom, #FAA600, #F68A00);
+			background: linear-gradient(to bottom, #FAA600, #F68A00);
+
+		}
+
+		
+
+	</style>
+</head>
+<body>
+
+	<!-- <h2>Estilizando Formulários 2</h2> -->
+
+	<div id="container">
+		
+		<img src="Imagens/perfil.png">
+
+		<form>
+			
+			<div>
+				<input class="email" type="text" name="nome" placeholder="Digite seu e-mail" id="email">
+			</div>		
+
+			<div>
+				<input class="senha" type="password" name="senha" placeholder="Digite sua senha" id="senha">
+			</div>	
+
+			<div>
+				<input class= "submit"type="submit" value="Logar">
+			</div>		
+
+
+		</form>
+
+
+
+
+
+	</div>
+	
+
+
+</body>
+</html>

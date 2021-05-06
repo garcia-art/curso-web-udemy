@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+		
+		var lista_convidados = ['Jorge', 'Jamilton', 'Garcia']
+
+		console.log(lista_convidados)
+
+		for( var x in lista_convidados){
+
+			console.log('Índice' + x + ' valor ' + lista_convidados[x])
+		}
+
+		/*
+		
+		O for in, ainda que não seja tão utilizado, é um recurso que permite
+		que a gente navegue por elementos do array que tenham chaves não sequenciais.
+
+		Veja o exemplo abaixo:
+
+		*/
+
+		lista_pessoas = Array()
+
+		lista_pessoas['a'] = 'Joana'
+		lista_pessoas['Zebra'] = 'Jamilton'
+		lista_pessoas[true] = 'Jorge'
+		lista_pessoas[1] = 'Garcia'
+
+		for( var x in lista_pessoas){
+
+			console.log('Índice ' + x + ' valor ' + lista_pessoas[x])
+		}
+
+
+
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

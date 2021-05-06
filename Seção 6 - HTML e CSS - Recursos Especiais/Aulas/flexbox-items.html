@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*
+
+		FLEXBOX - Items
+		_______________________________________________________________________________________________
+		- Order: define a ordem, funciona como o z-index;
+		_______________________________________________________________________________________________
+		- Flex-grow: define a proporção de espaço ocupado por um item. Quanto maior o número,
+		maior o espaço ocupado;
+		- flex-grow:1 -> o item ocupa todo o espaço possível do container;
+		- flex-grow:0 -> mantém o tamanho determinado do item;
+	    _______________________________________________________________________________________________
+		- Flex-shrink: define a capacidade de redução do tamanho do item. Quanto maior o número
+		menor é o espaço que ele ocupa;
+		- flex-shrink: 1 -> valor padrão;
+		_______________________________________________________________________________________________
+		- Flex-basis: define o tamanho inicial do flex item antes da distribuição do espaço restante;
+		- flex-basis: auto -> padrão, mantém o valor definido;
+		- flex-basis: xxx px;
+		 */
+
+		#conteudo {
+			background: #DCDCDC;
+			height: 500px;
+			display: flex;
+			
+		}
+
+		.item{
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			background: white;
+			border: gray solid 1px;
+			flex-grow: 0 ;
+		}
+
+		.item1{
+			flex-grow: 1;
+		}
+
+		/*.ordem1{order: 1;}
+		.ordem2{order: 3;}
+		.ordem3{order: 2;}
+		.ordem4{order: 4;}*/
+
+
+
+	</style>
+</head>
+<body>
+
+	
+	<h1>Flexbox</h1>
+	<div id="conteudo">
+		<div class="item item1">01</div>
+		<div class="item ordem2">02</div>
+		<div class="item ordem3">03</div>
+		<div class="item ordem4">04</div>
+	</div>
+
+</body>
+</html>

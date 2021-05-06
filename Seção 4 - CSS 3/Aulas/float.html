@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		/*FLOAT
+			- left, right ou none
+			- Faz com que o elemento saia do fluxo padrão de conteúdo;
+			- Se eu colocar um lado, e eles já estiverem nesse lado, os conteúdos se sobrepõe;
+			- Quando você aplica um float igual pra vários, eles não se sobrepõe, ficam uma ao 
+			lado da outra;
+			- O float se adapta ao tamanho de tela
+			- Para que a ordem de float funcione realmente, é necessário que não exista nada 
+			concorrendo com a posíção indicada. É necessário ter o espaço para que ele flutue.
+			- Clear: left, right, both none
+			- Clear limpa o fluxo de flutuação;
+			- Toda vez que você utiliza um float em conteúdo (conteúdo estando dentro de uma caixa x),
+			eles não fazem a caixa x expandir, até que eles ocupem todo espaçamento. É necessário 
+			limpar o fluxo com uma div com clear;
+			- 
+
+
+		*/
+
+		.conteudo{
+			background: blue;
+			border: 1px solid gray;
+			width: 200px;
+			height: 200px;
+			
+		}
+
+		/*.conteudo1{
+			background: blue;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+			float: left; 
+		}*/
+
+		.conteudo1{
+			background: blue;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+			float: left; 
+		}
+
+		.clear{
+
+			clear: both;}
+
+			.principal{
+				border: 5px solid red;
+				background: green;
+
+			}
+
+
+	</style>
+	
+</head>
+<body>
+<div class="principal">
+	<div class="conteudo">Conteúdo 1</div>
+	<div class="conteudo">Conteúdo 2</div>
+	<div class="conteudo">Conteúdo 3</div>
+	<div class="clear"></div>
+	</div>
+
+	
+
+</body>
+</html>

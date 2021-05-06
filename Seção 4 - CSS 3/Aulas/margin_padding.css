@@ -1,0 +1,22 @@
+.conteudo{
+	border: 1px solid red;
+	/*padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;  OU
+	padding: configurar no sentido horário;
+
+	*/
+	padding: 20px 5px;
+	/*margin: tem a mesma lógica de programação do padding;*/
+	margin: 20px 5px;
+	/* 
+	Margin-Collapse: Se eu aplicar um margin em um elemento a, e outro margin em um elemento b
+	e os dois elementos estiverem próximos, será levado em consideração o maior valor
+	de margin.
+	*/
+
+
+
+	width: 150px; 
+}

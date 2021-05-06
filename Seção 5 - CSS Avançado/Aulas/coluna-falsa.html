@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		body{
+			font-family: "Trebuchet MS", sans-serif;
+			background: #F2F2F2;
+		}
+
+		#container {
+
+			width: 960px;
+			margin: 0 auto;
+			background: #FFF;
+			min-width: 720px;
+			background: white url(Imagens/coluna.png) repeat-y left top;
+			
+
+		}
+
+		#marca {
+			background: #9e9e9e;
+			width: 100%;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+
+		}
+
+		#conteudo {
+			width: 520px;
+			
+			float: right;
+
+
+		}
+
+		#navegacao {
+			width: 180px;
+			float: left;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		#rodape {
+			clear: both;
+			background: #C4C4C4;
+			padding: 25px;
+
+		}
+
+		#navegacao ul{
+			list-style: none;
+		}
+
+		#navegacao li a{
+			text-decoration: none;
+		}
+
+		#conteudo-principal {
+			/*width: 320px;*/
+			width: 60%;
+			float: left;
+			
+		}
+
+		#conteudo-secundario {
+			/*width: 140px;*/
+			width: 30%;
+			float: right;
+			padding-left: 20px;
+			padding-right: 20px;
+			background: #D1D1D1;
+		}
+
+		#conteudo-secudario h1,
+		#conteudo-secudario h2,
+		#conteudo-secudario h3,
+		#conteudo-secudario p {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div id="container">
+
+		<div id="marca">Marca</div>
+
+		<div id="conteudo">
+			
+			
+			<div id="conteudo-principal">
+				<h1>Title</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. 
+
+				</p>
+
+
+			</div>
+			<div id="conteudo-secundario">
+
+				<h1>Title</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. 
+
+				</p>
+			</div>
+		</div>
+		
+		<div id="navegacao">
+
+			<ul>
+				<li id="atual"><a href="home.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="noticias.html">Notícias</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+		<div id="rodape">Rodapé</div>
+		
+	</div>
+</body>
+</html>

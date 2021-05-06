@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+		
+		/* ____________PARTE 1
+
+		var data = new Date()
+
+		document.write(data.getDate()) // retorna o dia
+		document.write(data.getMonth()) // retorna mês (0-11)
+		document.write(data.getFullYear()) // retorna ano 
+
+		document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())  */
+
+
+		/*  ____________PARTE 2
+
+		// adicionar e remover datas
+		var data = new Date()
+
+		document.write(data.toString())
+		data.setDate(data.getDate()+1) // somo ou subtraio, e coloco o set e get de acordo com o que desejo (dia, mês ou ano)
+		document.write('<hr/>')
+		document.write(datwa.toString())
+		
+		*/
+
+		// quantos dias tem entre 15/01/2017 e 23/02/2017?
+
+		// ordem dos parâmetros = olhar no W3Schools
+		var data1 = new Date(2017,0,15)
+		var data2 = new Date(2017,1,23)
+
+		document.write(data1.toString())
+		document.write('<hr />')
+		document.write(data2.toString())
+
+		document.write('<br /> <br /> <hr />')
+
+		document.write(data1.getTime())
+		document.write('<hr />')
+		document.write(data2.getTime())
+
+		// Padrão Computacional -> 1 de Janeiro de 1970 (milissegundos)
+
+		//encontrar a diferença de milissegundos entre data1 e data2
+
+		var diferença = Math.abs(data1.getTime() - data2.getTime())
+
+		// 1 dia = 24 h = 1440 min
+		// 1 dia = 86400 s = 86400000 ms
+
+		var milissegundos = 86400000
+
+		var resultado = diferença/milissegundos
+
+		document.write('A diferença é de ' + Math.ceil(resultado) + ' dias.')
+
+
+
+
+
+		 
+
+
+	</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

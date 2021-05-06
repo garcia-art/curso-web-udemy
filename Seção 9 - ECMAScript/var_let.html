@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<title>ECMAScript - JS Moderno</title>
+	<meta charset="utf-8">
+	<!-- Load Babel -->
+	<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<!-- Your custom script here -->
+	<script type="text/babel">
+	var serie = 'Friends'
+	function x(){
+	var serie = 'Game Of Thrones'
+		console.log('escopo da função' + serie)
+	
+
+		if(true){ console.log('if dentro da função' + serie)}
+	}
+
+	if(true){'if dentro do global' + console.log(serie)
+		let uau = 1;
+	}
+ 
+	x() ;
+
+	console.log(uau); // aqui vai dar erro, pois é let declarado em outro escopo,
+
+
+	</script>
+	
+</head>
+<body>
+
+	
+	<div id="output"></div>
+
+</body>
+</html>

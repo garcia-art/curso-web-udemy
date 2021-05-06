@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*
+
+		FLEXBOX - Container
+
+		- Quando nós temos uma flexbox, ela é composta de flex items, dentro de um container;
+		- É um conceito de design do tipo líquido;
+		- display: flex;
+		- flex-direction: row (coluna) ou row-reverse(coluna de lado inverso;) ou column(linha) ou column-reverse (linha ao inverso);
+		- flex-wrap: nowrap (não vai quebrar, aperta os itens no container, numa só linha), wrap (quebra pra linha de baixo do container) ou wrap-reverse (inverso do wrap);
+		- justify-content: flex-start (normal), flex-end (lado inverso), center (centralizado), space-between (distribui os itens, adicionando espaçamento igual entre eles, mas os links das extremidades ficam encostados nos cantos), space-around (mesmo que o space-between, mas as extremidades não encostam nos cantos);
+		- align-items: stretch (esticado - os itens preenchem toda área, até completar a altura), center (centralizar), flex-start (ficam colados na parte superior) , flex-end (ficam colados na parte inferior), baseline (usa a linha base do texto, para alinhar);
+		*/
+
+		#conteudo {
+			background: #DCDCDC;
+			height: 400px;
+			width: 300px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+
+		.item{
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			background: white;
+			border: gray solid 1px;
+		}
+
+	</style>
+</head>
+<body>
+
+	
+	<h1>Flexbox</h1>
+	<div id="conteudo">
+		<div class="item">01</div>
+		<div class="item">02</div>
+		<div class="item">03</div>
+		<div class="item">04</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script type="text/javascript">
+	// O window é a janela do browser onde o conteúdo é renderizado.
+	// Tem documentação na w3schools.com
+	// O objeto .document fornece acesso aos elementos HTML da página
+	var janela
+	function abrirPopUp() {
+		janela = window.open('http://www.google.com', 'nova_janela', 'width=200, height=200') // consulte a documentação para ver os parâmetros
+	}
+
+	function fecharPopUp() {
+
+		// pro close, preciso indicar a janela que desejo fechar. Observe o var janela no início do código, e o open.
+		janela.close()}
+</script>
+
+</head>
+<body>
+	<button onclick="abrirPopUp()">Abrir Janela</button>
+	<button onclick="fecharPopUp()" >Fechar Janela</button>
+	<button onclick="window.print()">Imprimir Página</button>
+</body>
+</html>

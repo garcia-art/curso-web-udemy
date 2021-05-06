@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: "Trebuchet MS", sans-serif;
+		}
+
+		fieldset{
+			padding: 1em;
+			border: 1px solid #CCC;
+			background: #F8F8F8;
+			margin: 1em 0;
+		}
+
+		legend{
+			font-weight: bold;
+		}
+
+		label {
+			display: block;
+			cursor: pointer;
+		}
+
+		/*input[type="text"]*/
+		input{
+			width: 20em;
+			margin: 1em;
+		}
+		}
+
+		textarea{
+			width: 20em;
+			height: 10em;
+		}
+		
+		input.checkbox, input.submit, input.radio{
+			width: auto;
+		}
+
+		.radio{
+			margin-right: 1em;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h2>Estilizando Formulários</h2>
+	
+	<form>
+		
+		<fieldset>
+			
+			<legend>Detalhes de Contato</legend>
+			<div>
+				<label for="nome">Nome:
+				<input type="text" name="nome" id="nome"></label>
+			</div>
+
+			<div>
+				<label>Email:
+				<input type="text" name="email" id="email"></label>
+			</div>
+
+			<div>
+				<label for="url">URL:
+				<input type="text" name="url" id="url"></label>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Comentários</legend>
+			<div>
+				<label for="mensagem">Mensagem:</label>
+				<textarea name="mensagem" id="mensagem"></textarea>
+			</div>
+
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Lembrar de Mim</legend>
+
+			<div>
+				<label>
+					<input class="radio" type="radio" name="lembrar" id="sim">Sim
+				</label>
+			</div>
+
+			<div>
+				<label>
+					<input class="radio" type="radio" name="lembrar" id="nao">Nção
+				</label>
+			</div>
+
+
+		</fieldset>
+
+
+	</form>
+
+
+</body>
+</html>

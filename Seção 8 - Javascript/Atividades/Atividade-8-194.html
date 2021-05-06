@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<style type="text/css">
+
+	</style>
+
+	<script type="text/javascript">
+
+		function mudaFundo(cor) {
+
+			document.getElementById('input').style.background = cor;
+		}
+		
+		function mudaFundo2(){
+
+			var valorCampo = document.getElementById('input').value
+
+			if (valorCampo.length >= 3 ) {
+
+				document.getElementById('input').style.background = 'green'
+			} else {document.getElementById('input').style.background = 'red'}
+		}
+	</script>
+	
+</head>
+<body>
+	<input type="text" onblur="mudaFundo2()" onfocus="mudaFundo('yellow')" id="input" name="">
+	<input type="" name="">
+</body>
+</html>
